@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    phpmyadmin:
+        container_name: phpmyadmin
+        environment:
+            - PMA_HOST=192.168.2.11
+            - PMA_USER=root
+            - PMA_PASSWORD=almighty2003
+            - PMA_PORT=3306
+        ports:
+            - '8080:80'
+        image: phpmyadmin
