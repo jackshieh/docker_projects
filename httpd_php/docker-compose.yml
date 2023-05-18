@@ -5,7 +5,7 @@ services:
         environment:
             - PMA_HOST=192.168.2.11
             - PMA_USER=root
-            - PMA_PASSWORD=almighty2003
+            - PMA_PASSWORD=${PHPMYADMIN_PASSWD}
             - PMA_PORT=3306
         ports:
             - '8080:80'
